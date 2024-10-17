@@ -59,14 +59,7 @@ function ResponsiveAppBar() {
 
   const [isLogin, setIsLogin] = useState(false);
 
-  const handleSignout = async () => {
-    try {
-      signOut();
-      location.reload();
-    } catch (error) {
-      console.log(error);
-    }
-  };
+
 
   useEffect(() => {
     if (user) {
